@@ -35,7 +35,7 @@
         header {
             background-color: #2d3748;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 1rem 2rem;
+            padding: 0.2rem 2rem;
         }
 
         .logo {
@@ -46,8 +46,9 @@
             color: var(--primary-color);
         }
 
-        main {
-            padding: 2rem 0;
+        .logo-img {
+            width: auto;
+            max-height: 5rem;
         }
 
         .hero {
@@ -122,6 +123,9 @@
             .feature-img {
                 max-height: 20vh;
             }
+            .logo-img {
+                max-height: 6vh;
+            }
 
             .badge-container img {
                 height: 50px;
@@ -138,7 +142,7 @@
     <header>
         <div class="logo">
             <a href="https://www.innoriid.eu" target="_blank">
-                <img src="img/logo.png" alt="innoRIID Dev Logo" />
+                <img class="logo-img" src="img/logo.png" alt="innoRIID Dev Logo" />
             </a>
         </div>
     </header>
