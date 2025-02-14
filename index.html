@@ -6,11 +6,11 @@
     <title>innoRIID Dev</title>
     <style>
         :root {
-            --primary-color: #1e40af; /* Darker shade for primary color */
-            --secondary-color: #2563eb; /* Lighter shade for secondary color */
-            --text-color: #f3f4f6; /* Light color for text */
-            --background-color: #1f2937; /* Dark color for background */
-            --background-light-color: #3b3c3ecc; /* Dark color for background */
+            --primary-color: #1e40af;
+            --secondary-color: #2563eb;
+            --text-color: #f3f4f6;
+            --background-color: #1f2937;
+            --background-light-color: #3b3c3ecc;
         }
         
         * {
@@ -29,17 +29,18 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0rem;
+            padding: 0 1rem;
         }
 
         header {
-            background-color: #2d3748; /* Dark color for header background */
+            background-color: #2d3748;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 0rem 2rem;
+            padding: 1rem 2rem;
         }
 
         .logo {
-            padding-top: 0.5rem;
+            display: flex;
+            align-items: center;
             font-size: 1.5rem;
             font-weight: bold;
             color: var(--primary-color);
@@ -55,12 +56,13 @@
         }
 
         h1 {
-            font-size: 5rem;
+            font-size: 3rem;
             color: var(--text-color);
         }
 
         .description {
             color: var(--text-color);
+            margin-top: 1rem;
         }
 
         .cta-button {
@@ -79,7 +81,7 @@
         }
 
         footer {
-            background-color: #2d3748; /* Dark color for footer background */
+            background-color: #2d3748;
             padding: 1rem 0;
             text-align: center;
             position: fixed;
@@ -89,12 +91,13 @@
         }
 
         .highlight {
-            color: rgb(226, 32, 37); /* Red color for "RAD" */
+            color: rgb(226, 32, 37);
         }
 
         .feature-img {
-            height: 30vh; /* 60% of the viewport height */
-            width: auto; /* Maintain aspect ratio */
+            max-height: 30vh;
+            width: auto;
+            margin-top: 2rem;
         }
 
         .badge-container {
@@ -103,21 +106,39 @@
             align-items: center;
             justify-content: center;
             padding-top: 3rem;
+            flex-wrap: wrap;
         }
 
         .badge-container img {
-            width: 250px;
-            height: 83px; /* Ensuring both badges have the same height */
-            object-fit: cover; /* Ensuring the image fits within the specified dimensions */
+            height: 60px;
+            width: auto;
         }
-        
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .feature-img {
+                max-height: 20vh;
+            }
+
+            .badge-container img {
+                height: 50px;
+                width: auto;
+            }
+
+            header, footer {
+                padding: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="logo">
             <a href="https://www.innoriid.eu" target="_blank">
-                <img src="img/logo.png" alt="innoRIID Dev Logo" />
+                <img src="img/logo.png" alt="innoRIID Dev Logo" style="height: 40px; width: auto;"/>
             </a>
         </div>
     </header>
@@ -129,24 +150,20 @@
                 <p class="description">
                     Smart Radiation Management at Your Fingertips
                 </p>
-                <!-- <a href="#" class="cta-button">Get Started</a> -->
-                 <br>
-                 <br>
                 <img src="img/feature.png" alt="RADsync App" class="feature-img" />
 
                 <div class="badge-container">
                     <!-- Google Play Store Badge -->
                     <a href='https://play.google.com/store/apps/details?id=com.innoriid.radsync&hl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-                        <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'  style="height: 120px; width: auto;"/>
+                        <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' style="height: 5rem; width: auto;"/>
                     </a>
                     
                     <!-- Apple App Store Badge -->
                     <a href="https://apps.apple.com/us/app/radsync/id1568500244">
-                        <img alt="Download on the App Store" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83">
-                      </a>
+                        <img alt="Download on the App Store" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" style="height: 3.5rem; width: auto;">
+                    </a>
                 </div>
             </section>
-          
         </div>
     </main>
 
