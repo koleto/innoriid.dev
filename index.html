@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>innoRIID Dev</title>
     <style>
-        
-        
         :root {
-            --primary-color: #2563eb;
-            --secondary-color: #1e40af;
-            --text-color: #1f2937;
-            --background-color: #f3f4f6;
-        } 
-
+            --primary-color: #1e40af; /* Darker shade for primary color */
+            --secondary-color: #2563eb; /* Lighter shade for secondary color */
+            --text-color: #f3f4f6; /* Light color for text */
+            --background-color: #1f2937; /* Dark color for background */
+        }
         
         * {
             margin: 0;
@@ -26,7 +23,7 @@
             line-height: 1.6;
             color: var(--text-color);
             background-color: var(--background-color);
-        } 
+        }
 
         .container {
             max-width: 1200px;
@@ -35,7 +32,7 @@
         }
 
         header {
-            background-color: white;
+            background-color: #2d3748; /* Dark color for header background */
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             padding: 1rem 0;
         }
@@ -57,15 +54,11 @@
 
         h1 {
             font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
+            color: var(--text-color);
         }
 
         .description {
-            font-size: 1.2rem;
             color: var(--text-color);
-            max-width: 600px;
-            margin: 0 auto;
         }
 
         .cta-button {
@@ -84,19 +77,22 @@
         }
 
         footer {
-            background-color: white;
+            background-color: #2d3748; /* Dark color for footer background */
             padding: 1rem 0;
             text-align: center;
             position: fixed;
             bottom: 0;
             width: 100%;
+            color: var(--text-color);
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">innoRIID Dev</div>
+            <div class="logo">
+                <img src="img/logo.png" alt="innoRIID Dev Logo" />
+            </div>
         </div>
     </header>
 
